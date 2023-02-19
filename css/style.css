@@ -1,0 +1,161 @@
+@import url(./fremwork.css);
+
+/* header */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #888;
+    padding:10px;
+    position:relative;
+}
+
+.logo{
+    padding: calc(var(--main-padding)/4);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo span{
+    color: var(--scanud-color);
+}
+
+.nav-item{
+    display: inline-block;
+    margin-left: calc(var(--main-margin)/2);
+}
+
+.nav-link{
+     color:var(--light-color);
+     transition: 0.4s;
+     position:relative;
+}
+
+.nav-link::after{
+    content:"";
+    width:100%;
+    height:1px;
+    position:absolute;
+    bottom:-21px;
+    left:0;
+}
+
+.nav-link:hover::after {
+    background-color:var(--scanud-color)
+}
+
+.nav-link:hover{
+    color: var(--scanud-color);
+}
+
+#toggler{
+        display: none;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:flex-end;
+        width: 40px;
+        height: 40px;
+    }
+
+#toggler .bar{
+    width:100%;
+    height:2px;
+    background-color:#fff;
+    cursor:pointer;
+    transition: 0.4s;
+}
+
+#toggler .bar:nth-child(2){
+    width:60%;
+}
+
+#toggler:hover .bar:nth-child(2){
+    width:100%;
+}
+
+
+@media(max-width:700px){
+
+    .nav-menu{
+        display:block;
+        background:var(--bg-color);
+        position:absolute;
+        top:calc(100% + 20px);
+        left:-20px;
+        right:-20px;
+        top:calc(100% + 10px);
+        text-align:center;
+        transition: .8s;
+    }
+
+    .hide{
+       top:-300px
+    }
+
+    .nav-item{
+        display:block;
+        margin-bottom:10px
+    }
+
+    .nav-link::after{
+        width:0;
+    }
+
+    .subscribe{
+        display:none
+    }
+
+    #toggler{
+        display:flex;
+    }
+
+}
+
+/* lagend */
+.lagend{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.lagend .title{
+    text-align: center;
+}
+
+.title h3 , .title h2 , .title p {
+    margin-bottom: calc(var(--main-margin)/2);
+    text-transform: capitalize;
+}
+
+.title h3{
+    letter-spacing: 1px;
+}
+
+.title h2{
+    font-size: 2rem;
+}
+
+.title h2 span{
+    color: var(--scanud-color)
+}*/*/
+
+
+/* about */
+.about{
+    height:50vh;
+    background-color:#000;
+}
+
+.about .title{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 40px;
+}
+
+.title span{
+    color: var(--scanud-color);
+}
+
